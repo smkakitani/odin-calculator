@@ -1,0 +1,167 @@
+body  {
+    background-image: linear-gradient(#2C0F4F, #4f0f2f);
+    /* background-color: #2C0F4F; */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer {
+    color: white;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+    display: flex;
+}
+
+#container {
+    background-color: #4C0F4F;
+    height: 500px;
+    width: 400px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#input-display {
+    background-color: #1e0a36;
+    color: white;
+    width: 77%;
+    height: 65px;
+    font-size: 2.7rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    margin: 15px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    text-shadow: 2px 2px 2px white;
+    box-shadow: 7px 7px 7px #11061f inset;
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+/* Buttons */
+.button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    background-color: #4C0F4F;
+    color: black;
+}
+
+.button:hover {
+    background-color: #6a156e;
+}
+
+/* buttons position */
+.zero {
+    grid-area: zero;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.dot {
+    grid-area: dot;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.addition {
+    grid-area: add;
+    background-color: #741779;
+}
+
+.subtraction {
+    grid-area: minus;
+    background-color: #741779;
+}
+
+.multiplication {
+    grid-area: multiply;
+    background-color: #741779;
+}
+
+.division {
+    grid-area: divide;
+    background-color: #741779;
+}
+
+.backspace {
+    grid-area: erase;
+    background-color: #741779;
+}
+
+.clear {
+    grid-area: clear;
+    background-color: #741779;
+}
+
+#buttons-container {
+    /* background-color: white; */
+    width: 90%;
+    height: 85%;
+    margin: 0 15px 15px;
+
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    grid-template:
+    'clear clear erase erase'
+    'seven eight nine divide'
+    'four five six multiply'
+    'one two three minus'
+    'zero dot equal add';
+}
+
