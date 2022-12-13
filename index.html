@@ -15,11 +15,12 @@
 <body>
     <h1>Calculator</h1>
     <div id="container">
-        <div id="input-display">890</div>
+        <div id="input-display">
+            <div id="saved-input"></div>
+            <div id="current-input"></div>
+            </div>
         <div id="buttons-container">
-            <button class="button zero">0</button>
-            <button class="button dot">.</button>
-            <button class="button equal">=</button>            
+            <button class="button zero">0</button>                        
             <button class="button one">1</button>
             <button class="button two">2</button>
             <button class="button three">3</button>
@@ -29,14 +30,16 @@
             <button class="button seven">7</button>
             <button class="button eight">8</button>
             <button class="button nine">9</button>
-            <button class="button addition">+</button>
-            <button class="button subtraction">-</button>
-            <button class="button multiplication">x</button>
-            <button class="button division">÷</button>
+            <button class="button dot">.</button>
+            <button class="button equal">=</button>
+            <button class="button addition operator">+</button>
+            <button class="button subtraction operator">-</button>
+            <button class="button multiplication operator">x</button>
+            <button class="button division operator">÷</button>
             <button class="button backspace">⌫</button>
             <button class="button clear">C</button>
         </div>
     </div>
-    <div id="footer">Copyright © 2022</div>
+    <div id="footer">Copyright © The Odin Project 2022 / Created by S. Kakitani</div>
 </body>
 </html>
